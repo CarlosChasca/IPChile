@@ -1,0 +1,1 @@
+(function(e){var t="__proto__"in{}?"2.1.0":"1.11.0";e.write("<script src=//ajax.googleapis.com/ajax/libs/jquery/"+t+"/jquery.min.js></script>")})(document);

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Condiciones que permiten añadir clases a la etiqeuta html y saber que tipo de explorer se está visualizando el sitio -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="es"> <!--<![endif]-->
+    <!-- Comienzo del Head -->
+    <head>
+    	<title>WoPATeC 2014</title>
+    	<meta charset="utf-8">
+    	<meta name="description" content="IPChile Admisión 2015">
+    	<meta name="author" content="UP Media Team"><!--Autor del Front-->
+    	<meta name="HandheldFriendly" content="True"><!-- Lo mismo que meta viewport, pero para navegadores obsoletos y más antiguos -->
+        <meta name="robots" content="noindex">
+        <meta name="MobileOptimized" content="320"><!-- Lo mismo que meta viewport, pero para navegadores obsoletos y más antiguos -->
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><!-- Atributos necesarios para un correcto despliegue del sitio en dispositivos móviles, igualando los pixeles en ancho y adaptandolos a las pantallas,quitando la opción zoom -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- Indica a IE antiguos cómo tiene que visualizar el sitio -->
+        <meta name="format-detection" content="telephone=no"><!-- Deshabilita la detección de teléfonos y mails en dispositivos que tengan Safari -->
+        
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/appleIcons/apple-touch-icon-144x144-precomposed.png"><!-- Iconos que se desplegarán como favorito en Dispositivos IOS de Alta resolución -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/appleIcons/apple-touch-icon-72x72-precomposed.png"><!-- Para la primera generación de Ipads -->
+        <link rel="apple-touch-icon-precomposed" href="images/appleIcons/apple-touch-icon-72x72-precomposed.png"><!-- IOS en general -->
+        <link rel="shortcut icon" href="/favicon.png"><!-- Favicon -->
+        
+        <link rel="stylesheet" href="css/style.css">
+
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/validizr.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- Librería que permite detectar capacidades de los navegadores, además permite que las etiquetas HTML5 se desplieguen de forma correcta en navegadores IE obsoletos -->
+		
+	</head>
+	<body>
+		<header class="blue">
+			<div class="row">
+				<nav class="bluenav">
+					<ul>
+						<li><a href="http://www.wopatec.ida.cl/front/index.html" rel="index" title="Ir al Inicio">Inicio</a></li>
+						<li><a href="http://www.wopatec.ida.cl/front/programa.html" rel="section" title="Ir a Programa">Programa</a></li>
+						<li><a href="http://www.wopatec.ida.cl/front/expositores.html" rel="section" title="Ir a Expositores">Expositores</a></li>
+						<li><a href="http://www.wopatec.ida.cl/front/lugar.html" rel="section" title="Ir a Lugar">Lugar</a></li>
+						<li><a href="#" rel="section" title="Ir a Inscripción">Inscripción</a></li>
+						<li><a href="http://www.wopatec.ida.cl/front/contacto.html" rel="section" title="Ir a Contacto">Contacto</a></li>
+						<li><a href="http://www.wopatec.ida.cl/front/instituciones.html" rel="section" title="Ir a Instituciones">Instituciones</a></li>
+					</ul>
+				</nav>
+				<select id="select-navigator" class="nav-onlytablet-phones" name="navigation">
+						<option value="http://www.wopatec.ida.cl/front/index.html">Inicio</option>
+						<option value="http://www.wopatec.ida.cl/front/programa.html">Programa</option>
+						<option value="http://www.wopatec.ida.cl/front/expositores.html">Expositores</option>
+						<option value="http://www.wopatec.ida.cl/front/lugar.html">Lugar</option>
+						<option value="#">Inscripción</option>
+						<option value="http://www.wopatec.ida.cl/front/contacto.html">Contacto</option>
+						<option value="http://www.wopatec.ida.cl/front/instituciones.html">Instituciones</option>
+				</select>
+			</div>
+		</header>
+
+		
+	</body>
+</html>
