@@ -7,7 +7,7 @@
 <html lang="es"> <!--<![endif]-->
     <!-- Comienzo del Head -->
     <head>
-    	<title>WoPATeC 2014</title>
+    	<title>IPCHILE ADMISIÓN 2015</title>
     	<meta charset="utf-8">
     	<meta name="description" content="IPChile Admisión 2015">
     	<meta name="author" content="UP Media Team"><!--Autor del Front-->
@@ -33,31 +33,243 @@
 		
 	</head>
 	<body>
-		<header class="blue">
+		<header class="blue-head"><!-- Header base -->
 			<div class="row">
-				<nav class="bluenav">
-					<ul>
-						<li><a href="http://www.wopatec.ida.cl/front/index.html" rel="index" title="Ir al Inicio">Inicio</a></li>
-						<li><a href="http://www.wopatec.ida.cl/front/programa.html" rel="section" title="Ir a Programa">Programa</a></li>
-						<li><a href="http://www.wopatec.ida.cl/front/expositores.html" rel="section" title="Ir a Expositores">Expositores</a></li>
-						<li><a href="http://www.wopatec.ida.cl/front/lugar.html" rel="section" title="Ir a Lugar">Lugar</a></li>
-						<li><a href="#" rel="section" title="Ir a Inscripción">Inscripción</a></li>
-						<li><a href="http://www.wopatec.ida.cl/front/contacto.html" rel="section" title="Ir a Contacto">Contacto</a></li>
-						<li><a href="http://www.wopatec.ida.cl/front/instituciones.html" rel="section" title="Ir a Instituciones">Instituciones</a></li>
-					</ul>
-				</nav>
-				<select id="select-navigator" class="nav-onlytablet-phones" name="navigation">
-						<option value="http://www.wopatec.ida.cl/front/index.html">Inicio</option>
-						<option value="http://www.wopatec.ida.cl/front/programa.html">Programa</option>
-						<option value="http://www.wopatec.ida.cl/front/expositores.html">Expositores</option>
-						<option value="http://www.wopatec.ida.cl/front/lugar.html">Lugar</option>
-						<option value="#">Inscripción</option>
-						<option value="http://www.wopatec.ida.cl/front/contacto.html">Contacto</option>
-						<option value="http://www.wopatec.ida.cl/front/instituciones.html">Instituciones</option>
-				</select>
+				<h1 class="logoip"><a href="/" title="Ir a IPChile" rel="nofollow"><img src="img/logos/logo.png" alt="IPChile logo" /></a></h1>
 			</div>
 		</header>
 
+		<section class="data-area"><!-- AREA PROMOCIONES Y FORMULARIO -->
+			<div class="row"><!-- Abre row -->
+
+				<div class="column6 student">
+					<img src="img/examples/student.png">
+
+				</div>
+				<div class="column6 last"><!-- Inicio Columna Formulario -->
+
+					<div class="logo-admision"><!-- IMAGEN ADMISION 2015 -->
+						<img src="img/logos/admision-logo.png" alt="ADMISIÓN 2015" />
+					</div>
+					
+					<div class="form-postulate"><!-- IMAGEN MATRICULA Y ARANCELES -->
+						<img src="img/examples/matricula-aranceles.png" alt="Matricula Gratis, Aranceles Congelados" />
+					</div>
+					
+					<div class="form-postulate"><!-- FORMULARIO INICIO -->
+						<h4 class="title-form">Postulación Online</h4>
+						<form class="form-container">
+
+							<div class="column5"><!-- Columna Derecha -->
+								<label for="contacto-nombre">Nombre</label>
+								<input type="text" name="contacto-nombre" required placeholder="Ingresa tu nombre">
+
+								<label for="contacto-rut">RUT</label>
+								<input type="text" name="contacto-rut" required placeholder="Ej. 12345678-9">
+								
+								<label for="contacto-celular">Celular</label>
+								<input type="text" name="contacto-celular" required placeholder="Ingresa tu celular">
+								
+								<label for="contacto-carrera">Sede</label>
+								<select type="text" name="contacto-carrera">
+									<option>Selecciona tu sede</option>
+									<option value="República">República</option>
+									<option value="San Joaquín">San Joaquín</option>
+									<option value="Temuco">Temuco</option>
+									<option value="Rancagua">Rancagua</option>
+									<option value="La Serena">La Serena</option>
+								</select>
+								
+							</div>
+
+							<div class="column5"><!-- Columna Izquierda -->
+								<label for="contacto-apellidos">Apellidos</label>
+								<input type="text" name="contacto-apellidos" required placeholder="Ingresa tus apellidos">
+
+								<label for="contacto-telefono">Teléfono</label>
+								<input type="text" name="contacto-telefono" required placeholder="Ingresa tu telefono">
+
+								<label for="contacto-email">Email</label>
+								<input type="text" name="contacto-email" required placeholder="Ingresa tu email">
+
+								<label for="contacto-carrera">Carrera</label>
+								<input type="submit" value="enviar"></input>
+							</div>
+
+						</form>
+					</div><!-- FORMULARIO FIN -->
+
+					<div class="price-area"><!-- IMAGEN PARTICIPA Y GANA UN NOTEBOOK -->
+						<img src="img/examples/premio.png" alt="POSTULA Y PARTICIPA POR UN NOTEBOOK"/>
+					</div>
+
+				</div>
+				<!-- Fin Columna Formulario -->
+
+			</div><!-- Cierre row -->
+		</section>
+		<!-- FIN AREA PROMOCIONES Y FORMULARIO -->
+		
+		<section class="white-border 5-circles"><!-- AREA BLANCA DE 5 CARACTERISTICAS -->
+			<div class="row"><!-- Apertura row -->
+
+				<div class="column2-5 circle">
+					<img src="img/iconos/academic-icono.png" alt="¿Porqué elegir IPChile?" />
+					<p>¿Porqué elegir IPChile?</p>
+				</div>
+
+				<div class="column2-5 circle">
+					<img src="img/iconos/beca-icono.png" alt="Becas y Financiamiento" />
+					<p>Becas y Financiamiento</p>
+				</div>
+
+				<div class="column2-5 circle">
+					<img src="img/iconos/cna-icono.png" alt="Institución Acreditada" />
+					<p>Institución Acreditada</p>
+				</div>
+
+				<div class="column2-5 circle">
+					<img src="img/iconos/matricula-icono.png" alt="¿Cómo me matriculo?" />
+					<p>¿Cómo me matriculo?</p>
+				</div>
+
+				<div class="column2-5 circle last">
+					<img src="img/iconos/arbol-icono.png" alt="Vida Estudiantil" />
+					<p>Vida Estudiantil</p>
+				</div>
+
+			</div><!-- cierre row -->
+		</section>
+		<!-- FIN AREA BLANCA DE 5 CARACTERISTICAS -->
+
+		<section class="introplace"><!-- AREA CONTENIDO INTRODUCTORIO -->
+			<div class="row">
+				<article class="blue-content">
+					<p>Somos una Institución Acreditada en Docencia de Pregrado y Gestión, que tiene como misión la formación de personas en el área técnica y profesional, a través de un proyecto educativo orientado al desarrollo de habilidades técnicas y sociales que le permiten desempeñarse con éxito en el mundo laboral, de manera 
+responsable y productiva.</p>
+				</article>
+				<div class="seal-cna">
+					<img src="img/logos/sellocna.png" alt="Acreditada 4 Años"/>
+				</div>
+			</div>
+
+		</section><!-- FIN AREA CONTENIDO INTRODUCTORIO -->
+
+		<section class="white"><!-- AREA CONTENIDO DURO -->
+			<div class="row">
+				<h3>Ya son muchos los que han decidido ser parte de nuestra comunidad IPCHILE.</h3>
+				<h2>¿Y TÚ, QUÉ ESPERAS?</h2>
+				<article class="blue-content">
+					<p>Contamos con sedes en La Serena, Santiago, Rancagua y Temuco. 
+					Junto con este crecimiento, la institución ha logrado el reconocimiento de su calidad, obteniendo en 2011 la acreditación institucional ante la 
+					Comisión Nacional de Acreditación por 4 años, lo que sin duda demuestra el activo compromiso de la institución por mejorar continuamente su proyecto educativo.
+					</p>
+				</article>
+
+			</div>
+		</section><!-- FIN AREA CONTENIDO DURO -->
+
+		<section class="white"><!-- AREA LINKS ESCUELAS -->
+			<div class="row">
+				<h3>Enterate más de las escuelas y Carreras Acreditadas del Instituto Profesional de Chile.</h3>
+				<h4>Elige tu Escuela</h4>
+
+				<div class="column-">
+					<a href="/" title="Administración y Negocios" rel="nofollow"><img src="img/iconos/negocios.png" alt=""></a>
+					<a href="/" title="Comunicaciones" rel="nofollow"><img src="img/iconos/comunicaciones.png" alt=""></a>
+					<a href="/" title="Educación" rel="nofollow"><img src="img/iconos/educacion.png" alt=""></a>
+					<a href="/" title="Minería" rel="nofollow"><img src="img/iconos/mineria.png" alt=""></a>
+				</div>
+
+				<div class="column- last">
+					<a href="/" title="Ciencias Jurídicas y de Trabajo" rel="nofollow"><img src="img/iconos/juridicas.png" alt=""></a>
+					<a href="/" title="Deportes y Actividad Fisíca" rel="nofollow"><img src="img/iconos/deportes.png" alt=""></a>
+					<a href="/" title="Ingeniería" rel="nofollow"><img src="img/iconos/ingenieria.png" alt=""></a>
+					<a href="/" title="Enfermería y Rehabilitación" rel="nofollow"><img src="img/iconos/enfermeria.png" alt=""></a>
+				</div>
+
+			</div>
+		</section><!-- FIN AREA LINKS ESCUELAS -->
+		
+		<section class="blue"><!-- AREA HORARIO ATENCION SEDES -->
+			<div class="row">
+
+				<div class="column-">
+					<img src="img/examples/clock.png" alt="">
+				</div>
+				<div class="column-">
+					<h4>Horarios de Atención</h4>
+					<p class="">
+						<strong>Sede República</strong>-República 285. 
+						Lunes a Jueves de 09:00 a 18:30 - Viernes 09:00-18:00
+					</p>
+					<p class="">
+						<strong>Sede</strong>– Vicuña Mackenna 3451. 
+						Lunes a Viernes de 10:00 a 19:00
+					</p>
+					<p class="">
+						<strong>Sede</strong>– Cuevas 135. 
+						Lunes a Viernes de 09:30 a 14:00 - 15:00 19:30 
+					</p>
+					<p class="">
+						<strong>Sede</strong>– Prat 728. 
+						Lunes a Viernes de 09:00 a 20:00
+					</p>
+					<p class="">
+						<strong>Sede</strong>– Av. Francisco de Aguirre 388. 
+						Lunes a Viernes de 09:00 a 13:30 - 14:30 a 18:30 
+					</p>
+				</div>
+
+			</div>
+		</section><!-- FIN AREA HORARIO ATENCION SEDES -->
+		
+		<section class="white" ><!-- AREA HORARIO ATENCION OFICINAS -->
+			<div class="row">
+
+				<div class="column-">
+					<h4>Horarios de Atención</h4>
+					<p class="">
+						<strong>Sede República</strong>-República 285. 
+						Lunes a Jueves de 09:00 a 18:30
+					</p>
+					<p class="">
+						<strong>Sede</strong>– Vicuña Mackenna 3451. 
+						Lunes a Viernes de 10:00 a 19:00
+					</p>
+				</div>
+
+				<div class="column-">
+					<p class="">
+						<strong>Sede</strong>– Cuevas 135. 
+						Lunes a Viernes de 09:30 a 14:00 - 15:00 19:30 
+					</p>
+					<p class="">
+						<strong>Sede</strong>– Prat 728. 
+						Lunes a Viernes de 09:00 a 20:00
+					</p>
+					<p class="">
+						<strong>Sede</strong>– Av. Francisco de Aguirre 388. 
+						Lunes a Viernes de 09:00 a 13:30 - 14:30 a 18:30 
+					</p>
+				</div>
+
+			</div>
+		</section><!-- FIN AREA HORARIO ATENCION OFICINAS -->
+		
+		<section class="" ><!-- AREA REQUERIMIENTOS ACADEMICOS-->
+			<div class="row">
+
+				<h4>Conoce los requerimientos académicos</h4>
+				<div class="column-">
+					<a class="" href="/" title="Requisitos Acádemicos" rel="help">Requisitos Acádemicos</a>
+					<a class="" href="/" title="Requisitos Financieros" rel="help">Requisitos Financieros</a>
+					<a class="" href="/" title="Requisitos Especiales" rel="help">Requisitos Especiales</a>
+					<a class="" href="/" title="Alumnos Extranjeros" rel="help">Alumnos Extranjeros</a>
+				</div>
+
+			</div>
+		</section><!-- FIN AREA REQUERIMIENTOS ACADEMICOS -->
 		
 	</body>
 </html>
