@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- Condiciones que permiten añadir clases a la etiqeuta html y saber que tipo de explorer se está visualizando el sitio -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="es"> <!--<![endif]-->
+    <!-- Comienzo del Head -->
+    <head>
+    	<title>IPCHILE ADMISIÓN 2015</title>
+    	<meta charset="utf-8">
+    	<meta name="description" content="IPChile Admisión 2015">
+    	<meta name="author" content="UP Media Team"><!--Autor del Front-->
+    	<meta name="HandheldFriendly" content="True"><!-- Lo mismo que meta viewport, pero para navegadores obsoletos y más antiguos -->
+        <meta name="robots" content="noindex">
+        <meta name="MobileOptimized" content="320"><!-- Lo mismo que meta viewport, pero para navegadores obsoletos y más antiguos -->
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><!-- Atributos necesarios para un correcto despliegue del sitio en dispositivos móviles, igualando los pixeles en ancho y adaptandolos a las pantallas,quitando la opción zoom -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- Indica a IE antiguos cómo tiene que visualizar el sitio -->
+        <meta name="format-detection" content="telephone=no"><!-- Deshabilita la detección de teléfonos y mails en dispositivos que tengan Safari -->
+        
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/appleIcons/apple-touch-icon-144x144-precomposed.png"><!-- Iconos que se desplegarán como favorito en Dispositivos IOS de Alta resolución -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/appleIcons/apple-touch-icon-72x72-precomposed.png"><!-- Para la primera generación de Ipads -->
+        <link rel="apple-touch-icon-precomposed" href="images/appleIcons/apple-touch-icon-72x72-precomposed.png"><!-- IOS en general -->
+        <link rel="shortcut icon" href="/favicon.png"><!-- Favicon -->
+        
+        <link rel="stylesheet" href="css/style.css">
+
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/validizr.js"></script>
+        <script type="text/javascript" src="js/dropdown.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- Librería que permite detectar capacidades de los navegadores, además permite que las etiquetas HTML5 se desplieguen de forma correcta en navegadores IE obsoletos -->
+		
+	</head>
+	<body>
+		<header class="blue-head"><!-- Header base -->
+			<div class="row">
+				<h1 class="logoip"><a href="/" title="Ir a IPChile" rel="nofollow"><img src="img/logos/logo.png" alt="IPChile logo" /></a></h1>
+			</div>
+		</header>
+
+		<section class="data-area"><!-- AREA PROMOCIONES Y FORMULARIO -->
+			<div class="row"><!-- Abre row -->
+
+				<div class="column6 student">
+					<img src="img/examples/student.png">
+
+				</div>
+				<div class="column6 last"><!-- Inicio Columna Formulario -->
+
+					<div class="logo-admision"><!-- IMAGEN ADMISION 2015 -->
+						<img src="img/logos/admision-logo.png" alt="ADMISIÓN 2015" />
+					</div>
+					
+					<div class="form-postulate"><!-- IMAGEN MATRICULA Y ARANCELES -->
+						<img src="img/examples/matricula-aranceles.png" alt="Matricula Gratis, Aranceles Congelados" />
+					</div>
+					
+					<div class="form-postulate" id="postulate"><!-- FORMULARIO INICIO -->
+						<h4 class="title-form">Postulación Online</h4>
+						<form class="form-container">
+
+							<div class="column5-45"><!-- Columna Derecha -->
+								<label for="contacto-nombre">Nombre</label>
+								<input type="text" name="contacto-nombre" required placeholder="Ingresa tu nombre">
+
+								<label for="contacto-rut">RUT</label>
+								<input type="text" name="contacto-rut" required placeholder="Ej. 12345678-9">
+								
+								<label for="contacto-celular">Celular</label>
+								<input type="text" name="contacto-celular" required placeholder="Ingresa tu celular">
+								
+								<label for="contacto-carrera">Sede</label>
+								<select class="down-arrow" type="text" name="contacto-carrera">
+									<option>Selecciona tu sede</option>
+									<option value="República">República</option>
+									<option value="San Joaquín">San Joaquín</option>
+									<option value="Temuco">Temuco</option>
+									<option value="Rancagua">Rancagua</option>
+									<option value="La Serena">La Serena</option>
+								</select>
+
+							</div>
+
+							<div class="column5-45"><!-- Columna Izquierda -->
+								<label for="contacto-apellidos">Apellidos</label>
+								<input type="text" name="contacto-apellidos" required placeholder="Ingresa tus apellidos">
+
+								<label for="contacto-telefono">Teléfono</label>
+								<input type="text" name="contacto-telefono" required placeholder="Ingresa tu telefono">
+
+								<label for="contacto-email">Email</label>
+								<input type="text" name="contacto-email" required placeholder="Ingresa tu email">
+
+								<label for="contacto-carrera">Carrera</label>
+								<input type="text" name="contacto-carrera" required placeholder="Ingresa tu carrera">
+								
+							</div>
+
+							<div class="column5">
+								<input class="mg-10-0 send" type="submit" value="Enviar"></input>
+							</div>
+
+						</form>
+					</div><!-- FORMULARIO FIN -->
+
+					<div class="price-area"><!-- IMAGEN PARTICIPA Y GANA UN NOTEBOOK -->
+						<img src="img/examples/premio.png" alt="POSTULA Y PARTICIPA POR UN NOTEBOOK"/>
+					</div>
+
+				</div>
+				<!-- Fin Columna Formulario -->
+
+			</div><!-- Cierre row -->
+		</section>
+		<!-- FIN AREA PROMOCIONES Y FORMULARIO -->
+
+		<!-- jQuery if needed -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			
+			function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('li');
+				this.opts = this.dd.find('ul.dropdown > li');
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text(obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.careers').removeClass('active');
+				});
+
+			});
+
+		</script>
+		
+	</body>
+</html>

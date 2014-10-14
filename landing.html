@@ -28,6 +28,7 @@
         <script type="text/javascript" src="js/modernizr.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/validizr.js"></script>
+        <script type="text/javascript" src="js/dropdown.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <!-- Librería que permite detectar capacidades de los navegadores, además permite que las etiquetas HTML5 se desplieguen de forma correcta en navegadores IE obsoletos -->
 		
@@ -71,7 +72,7 @@
 								<input type="text" name="contacto-celular" required placeholder="Ingresa tu celular">
 								
 								<label for="contacto-carrera">Sede</label>
-								<select type="text" name="contacto-carrera">
+								<select class="down-arrow" type="text" name="contacto-carrera">
 									<option>Selecciona tu sede</option>
 									<option value="República">República</option>
 									<option value="San Joaquín">San Joaquín</option>
@@ -183,17 +184,23 @@ responsable y productiva.</p>
 
 				<div class="column12 padded-15-0  padding-only-phones">
 					<ul class="column5-45 careers">
-						<li class="blue"><a class="button" href="/" title="Administración y Negocios" rel="nofollow">Administración y Negocios<img src="img/iconos/negocios.png" alt=""></a></li>
-						<li class="brown"><a class="button" href="/" title="Comunicaciones" rel="nofollow">Comunicaciones<img src="img/iconos/comunicaciones.png" alt=""></a></li>
-						<li class="pink"><a class="button" href="/" title="Educación" rel="nofollow">Educación<img src="img/iconos/educacion.png" alt=""></a></li>
-						<li class="orange"><a class="button" href="/" title="Minería" rel="nofollow">Minería<img src="img/iconos/mineria.png" alt=""></a></li>
+						<li class="blue" id="dd" tabindex="1"><a class="button" href="#" title="Administración y Negocios" rel="nofollow">Administración y Negocios<img src="img/iconos/negocios.png" alt=""></a>
+							<ul class="dropdown">
+							<li><a href="#"><i class="icon-envelope icon-large"></i>Classic mail</a></li>
+							<li><a href="#"><i class="icon-truck icon-large"></i>UPS Delivery</a></li>
+							<li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
+						</ul>
+						</li>
+						<li class="brown"><a class="button" href="#" title="Comunicaciones" rel="nofollow">Comunicaciones<img src="img/iconos/comunicaciones.png" alt=""></a></li>
+						<li class="pink"><a class="button" href="#" title="Educación" rel="nofollow">Educación<img src="img/iconos/educacion.png" alt=""></a></li>
+						<li class="orange"><a class="button" href="#" title="Minería" rel="nofollow">Minería<img src="img/iconos/mineria.png" alt=""></a></li>
 					</ul>
 
 					<ul class="column5-45 careers last">
-						<li class="cashmir"><a class="button" href="/" title="Ciencias Jurídicas y de Trabajo" rel="nofollow">Ciencias Jurídicas y de Trabajo<img src="img/iconos/juridicas.png" alt=""></a></li>
-						<li class="green"><a class="button" href="/" title="Deportes y Actividad Fisíca" rel="nofollow">Deportes y Actividad Fisíca<img src="img/iconos/deportes.png" alt=""></a></li>
-						<li class="gray"><a class="button" href="/" title="Ingeniería" rel="nofollow">Deportes y Actividad Fisíca<img src="img/iconos/ingenieria.png" alt=""></a></li>
-						<li class="cerulean"><a class="button" href="/" title="Enfermería y Rehabilitación" rel="nofollow">Enfermería y Rehabilitación<img src="img/iconos/enfermeria.png" alt=""></a></li>
+						<li class="cashmir"><a class="button" href="#" title="Ciencias Jurídicas y de Trabajo" rel="nofollow">Ciencias Jurídicas y de Trabajo<img src="img/iconos/juridicas.png" alt=""></a></li>
+						<li class="green"><a class="button" href="#" title="Deportes y Actividad Fisíca" rel="nofollow">Deportes y Actividad Fisíca<img src="img/iconos/deportes.png" alt=""></a></li>
+						<li class="gray"><a class="button" href="#" title="Ingeniería" rel="nofollow">Deportes y Actividad Fisíca<img src="img/iconos/ingenieria.png" alt=""></a></li>
+						<li class="cerulean"><a class="button" href="#" title="Enfermería y Rehabilitación" rel="nofollow">Enfermería y Rehabilitación<img src="img/iconos/enfermeria.png" alt=""></a></li>
 					</ul>
 				</div>
 
@@ -203,8 +210,8 @@ responsable y productiva.</p>
 		<section class="deep-blue"><!-- AREA HORARIO ATENCION SEDES -->
 			<div class="row">
 
-				<div class="column12 padded-5-0">
-					<div class="column6 clocked">
+				<div class="column12 padded-5-0 ">
+					<div class="column6 clocked mg-bottom50">
 						<img src="img/examples/clock.png" alt="">
 					</div>
 					<div class="column6 last timing">
@@ -250,7 +257,7 @@ responsable y productiva.</p>
 						</p>
 					</div>
 
-					<div class="column6 last">
+					<div class="column6 last mg-bottom50">
 						<p>
 							<strong>Sede</strong>– Cuevas 135. </br>
 							Lunes a Viernes de 09:30 a 14:00 - 15:00 19:30 
@@ -282,6 +289,55 @@ responsable y productiva.</p>
 
 			</div>
 		</section><!-- FIN AREA REQUERIMIENTOS ACADEMICOS -->
+
+		<!-- jQuery if needed -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			
+			function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('li');
+				this.opts = this.dd.find('ul.dropdown > li');
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text(obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.careers').removeClass('active');
+				});
+
+			});
+
+		</script>
 		
 	</body>
 </html>

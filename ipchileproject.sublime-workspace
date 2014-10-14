@@ -4,16 +4,60 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"blue",
+				"blue-timing"
+			],
+			[
+				"fff",
+				"ffffff"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"background",
+				"background-repeat"
+			],
+			[
+				"form",
+				"form-container"
+			],
+			[
+				"op",
+				"open_sansregular"
+			],
+			[
+				"h",
+				"h4	Tag"
+			],
+			[
+				"backgrou",
+				"background-image"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
 				"btn",
 				"btn-primary"
 			],
 			[
 				"hoe",
 				"hover"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"pa",
@@ -48,10 +92,6 @@
 				"text-align"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"i",
 				"italic"
 			],
@@ -74,10 +114,6 @@
 			[
 				"fo",
 				"focus"
-			],
-			[
-				"max",
-				"max-height"
 			],
 			[
 				"padd",
@@ -171,6 +207,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 12795,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 19622,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -486,8 +538,71 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 12795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5018.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "css/style.css",
+					"settings":
+					{
+						"buffer_size": 19622,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9498.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -508,11 +623,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.47053306077,
 			1.0
 		],
 		"rows":
@@ -547,6 +669,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 254.0,
+	"side_bar_width": 130.0,
 	"status_bar_visible": true
 }
